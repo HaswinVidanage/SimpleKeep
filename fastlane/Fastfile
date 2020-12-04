@@ -8,6 +8,11 @@ end
 
 platform :ios do
    # iOS Lanes
+   desc 'Fetch certificates and provisioning profiles'
+   lane :certificates do
+     match(app_identifier: 'org.niwsah.simplekeep', type: 'development', readonly: true)
+     match(app_identifier: 'org.niwsah.simplekeep', type: 'appstore', readonly: true)
+   end
 end
 
 platform :android do
