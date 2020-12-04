@@ -15,7 +15,7 @@ Install _fastlane_ using
 or alternatively using `brew install fastlane`
 
 # Available Actions
-`## iOS
+## iOS
 ### ios certificates
 ```
 fastlane ios certificates
