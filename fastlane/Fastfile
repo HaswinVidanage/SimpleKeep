@@ -24,6 +24,13 @@ platform :ios do
      )
     end
 
+   desc 'Ship to Testflight.'
+   lane :beta do
+    build
+    pilot
+    commit_version_bump(message: 'Bump build', xcodeproj: './ios/SimpleKeep.xcodeproj')
+    push_to_git_remote
+   end
 end
 
 platform :android do

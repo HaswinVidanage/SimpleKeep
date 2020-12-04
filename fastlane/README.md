@@ -26,6 +26,11 @@ Fetch certificates and provisioning profiles
 fastlane ios build
 ```
 Fetch certificates. Build the iOS application.
+### ios beta
+```
+fastlane ios beta
+```
+Ship to Testflight.
 
 ----
 
