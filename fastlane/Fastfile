@@ -20,7 +20,7 @@ platform :ios do
        scheme: "SimpleKeep",
        workspace: './ios/SimpleKeep.xcworkspace',
        # project: './ios/SimpleKeep.xcodeproj', # Use this command if you don't have an iOS .xcworkspace file.
-       export_method: 'app-store'
+       export_method: 'development'
      )
     end
 
