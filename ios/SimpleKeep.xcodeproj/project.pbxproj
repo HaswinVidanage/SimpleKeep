@@ -666,7 +666,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.niwsah.simplekeep;
+				PRODUCT_BUNDLE_IDENTIFIER = com.niwsah.simplekeep;
 				PRODUCT_NAME = SimpleKeep;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -691,7 +691,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.niwsah.simplekeep;
+				PRODUCT_BUNDLE_IDENTIFIER = com.niwsah.simplekeep;
 				PRODUCT_NAME = SimpleKeep;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
