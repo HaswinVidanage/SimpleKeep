@@ -17,7 +17,6 @@ platform :ios do
    desc 'Build the iOS application.'
    private_lane :build do
      certificates
-     increment_build_number(xcworkspace: './ios/SimpleKeep.xcworkspace')
      gym(scheme: 'name', project: './ios/SimpleKeep.xcworkspace')
    end
 
