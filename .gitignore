@@ -75,3 +75,6 @@ builds/*
 *.xcarchive
 
 *.zip
+
+# fastlane env
+fastlant/.env
