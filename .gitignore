@@ -77,4 +77,5 @@ builds/*
 *.zip
 
 # fastlane env
-fastlant/.env
+.env
+.env.*
