@@ -10,6 +10,7 @@ platform :ios do
    # iOS Lanes
    desc 'Fetch certificates and provisioning profiles'
    lane :certificates do
+       env
        match(app_identifier: 'com.niwsah.simplekeep', type: 'development', readonly: true)
        match(app_identifier: 'com.niwsah.simplekeep', type: 'appstore', readonly: true)
    end
