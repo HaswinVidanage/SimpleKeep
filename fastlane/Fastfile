@@ -14,16 +14,12 @@ platform :ios do
        match(app_identifier: 'com.niwsah.simplekeep', type: 'appstore', readonly: true)
    end
 
-   desc 'Fetch certificates. Build the iOS application.'
-   lane :build do
+   desc 'Build the iOS application.'
+   private_lane :build do
      certificates
-     gym(
-       scheme: "SimpleKeep",
-       workspace: './ios/SimpleKeep.xcworkspace',
-       # project: './ios/SimpleKeep.xcodeproj', # Use this command if you don't have an iOS .xcworkspace file.
-       export_method: 'development'
-     )
-    end
+     increment_build_number(xcworkspace: './ios/SimpleKeep.xcworkspace')
+     gym(scheme: 'name', project: './ios/SimpleKeep.xcworkspace')
+   end
 
    desc 'Ship to Testflight.'
    lane :beta do
